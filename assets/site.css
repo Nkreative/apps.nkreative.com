@@ -110,7 +110,6 @@ th { font: 400 0.75rem/1.4 "Space Mono", monospace; color: var(--muted); letter-
 /* Draft marker for review; removed before publishing. */
 .draft { background: var(--yellow); color: var(--bg); font: 700 0.875rem/1.4 "Inter", sans-serif; padding: 10px 0; }
 .draft .wrap { display: block; }
-mark.confirm { background: var(--yellow); color: var(--bg); padding: 0 4px; border-radius: 3px; }
 
 footer.site { border-top: 1px solid var(--line); padding: 24px 0 40px; font-size: 0.9rem; color: var(--muted); }
 footer.site a { color: var(--muted); }

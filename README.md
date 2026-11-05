@@ -12,8 +12,7 @@ Static pages for NKreative's apps, served by GitHub Pages at `https://apps.nkrea
 
 ## Before publishing
 
-1. Fill in every highlighted `[CONFIRM: …]` item in `retrograde/privacy/index.html`.
-2. Remove the yellow `<div class="draft">…</div>` banner and the `<meta name="robots" content="noindex">` line from every page.
+1. Remove the yellow `<div class="draft">…</div>` banner and the `<meta name="robots" content="noindex">` line from every page.
 
 ## Publishing (GitHub Pages + Porkbun)
 
