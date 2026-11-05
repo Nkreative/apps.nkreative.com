@@ -1,0 +1,120 @@
+/* Retrograde pages on apps.nkreative.com. Colours and fonts are the app's own (bundled fonts,
+   SIL Open Font License; no third-party requests). */
+
+@font-face { font-family: "Archivo Black"; src: url("fonts/ArchivoBlack-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Space Mono"; src: url("fonts/SpaceMono-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Inter"; font-weight: 400; src: url("fonts/Inter-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Inter"; font-weight: 600; src: url("fonts/Inter-SemiBold.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Inter"; font-weight: 700; src: url("fonts/Inter-Bold.ttf") format("truetype"); font-display: swap; }
+
+:root {
+  --bg: #130d25;
+  --surface: #1d1331;
+  --line: #49305f;
+  --text: #f5f0ff;
+  --muted: #b8a9cd;
+  --pink: #ff2d87;
+  --pink-soft: #ec82b1;
+  --yellow: #ffd23d;
+  --wine: #461736;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 1.0625rem/1.6 "Inter", -apple-system, system-ui, sans-serif;
+}
+
+a { color: var(--pink-soft); text-underline-offset: 3px; }
+a:hover { color: var(--text); }
+a:focus-visible { outline: 2px solid var(--pink); outline-offset: 3px; border-radius: 4px; }
+
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 16px; top: 16px; padding: 8px 12px; background: var(--surface); z-index: 2; }
+
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+header.site {
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, #201431 0%, var(--bg) 100%);
+}
+header.site .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding-top: 18px; padding-bottom: 18px; }
+
+.brand { display: flex; align-items: center; gap: 12px; color: var(--text); text-decoration: none; margin-right: auto; }
+.brand .mark { width: 34px; height: 34px; border-radius: 50%; background: var(--pink); flex: none; }
+.brand .name { font-family: "Archivo Black", sans-serif; font-size: 1.25rem; letter-spacing: 0.02em; line-height: 1.1; }
+.brand .tag { display: block; font: 400 0.6875rem/1.3 "Space Mono", monospace; color: var(--muted); letter-spacing: 0.04em; }
+
+nav.site ul { display: flex; gap: 8px; list-style: none; margin: 0; padding: 0; }
+nav.site a {
+  display: inline-block; min-height: 44px; padding: 10px 14px;
+  font: 400 0.8125rem/1.6 "Space Mono", monospace; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--text); text-decoration: none; border: 1px solid var(--line); border-radius: 999px;
+}
+nav.site a[aria-current="page"] { border-color: var(--pink); background: var(--wine); }
+
+main { padding: 36px 0 56px; }
+
+.eyebrow { font: 400 0.75rem/1.4 "Space Mono", monospace; color: var(--pink); letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 8px; }
+
+h1, h2 { font-family: "Archivo Black", sans-serif; font-weight: 400; line-height: 1.2; letter-spacing: 0.01em; }
+h1 { font-size: clamp(1.75rem, 6vw, 2.25rem); margin: 0 0 12px; text-transform: uppercase; }
+h2 { font-size: 1.2rem; margin: 40px 0 10px; text-transform: uppercase; }
+h3 { font-size: 1.05rem; font-weight: 600; margin: 24px 0 6px; }
+
+.lede { color: var(--muted); font-size: 1.125rem; margin: 0 0 8px; }
+.updated { font: 400 0.8125rem/1.5 "Space Mono", monospace; color: var(--muted); }
+
+p, li { color: var(--text); }
+.muted { color: var(--muted); }
+ul, ol { padding-left: 1.25rem; }
+li { margin: 6px 0; }
+strong { font-weight: 600; }
+
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 16px 18px; margin: 16px 0;
+}
+.card > :first-child { margin-top: 0; }
+.card > :last-child { margin-bottom: 0; }
+.card.summary { border-color: var(--pink); background: var(--wine); }
+
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.975rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+th { font: 400 0.75rem/1.4 "Space Mono", monospace; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase; }
+.table-scroll { overflow-x: auto; }
+
+.button {
+  display: inline-block; min-height: 48px; padding: 12px 20px; border-radius: 8px;
+  background: var(--pink); color: var(--text); font-weight: 700; text-decoration: none;
+}
+.button:hover { color: var(--text); filter: brightness(1.08); }
+
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* The plan comparison becomes stacked rows on narrow screens. */
+@media (max-width: 600px) {
+  table.plans thead { display: none; }
+  table.plans tr { display: block; border-bottom: 1px solid var(--line); padding: 10px 0; }
+  table.plans th[scope="row"] { display: block; border: 0; padding: 4px 0; font-size: 0.8125rem; color: var(--pink-soft); }
+  table.plans td { display: grid; grid-template-columns: 7.5rem 1fr; gap: 12px; border: 0; padding: 4px 0; }
+  table.plans td::before { content: attr(data-label); color: var(--muted); font: 400 0.8125rem/1.6 "Space Mono", monospace; }
+}
+
+/* Draft marker for review; removed before publishing. */
+.draft { background: var(--yellow); color: var(--bg); font: 700 0.875rem/1.4 "Inter", sans-serif; padding: 10px 0; }
+.draft .wrap { display: block; }
+mark.confirm { background: var(--yellow); color: var(--bg); padding: 0 4px; border-radius: 3px; }
+
+footer.site { border-top: 1px solid var(--line); padding: 24px 0 40px; font-size: 0.9rem; color: var(--muted); }
+footer.site a { color: var(--muted); }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
