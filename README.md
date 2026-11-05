@@ -10,10 +10,6 @@ Static pages for NKreative's apps, served by GitHub Pages at `https://apps.nkrea
 
 `/retrograde/privacy` redirects to `/retrograde/privacy/` (GitHub Pages adds the trailing slash), so both forms work.
 
-## Before publishing
-
-1. Remove the yellow `<div class="draft">…</div>` banner and the `<meta name="robots" content="noindex">` line from every page.
-
 ## Publishing (GitHub Pages + Porkbun)
 
 This only adds the `apps` subdomain; `nkreative.com` itself and its existing records stay as they are.
