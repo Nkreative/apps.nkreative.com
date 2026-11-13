@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Between Lines</title>
+<meta name="description" content="How Between Lines handles your information: what stays on your iPhone, what's sent for a reading, what our server keeps, and your choices and rights.">
+<meta name="theme-color" content="#f3efe8">
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<!--
+  Source of truth: the in-app Privacy Policy (between-lines repo,
+  client/src/components/privacy-policy.tsx, "Last updated 12 November 2026").
+  This page says the same things, with more detail on hosting, email,
+  this website, legal bases, international transfers and privacy rights.
+  Comments marked REVIEW flag statements that still need a decision or legal
+  review before publishing. Verified facts carry no REVIEW comment.
+-->
+<a class="skip" href="#content">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="../">
+      <svg class="mark" viewBox="0 0 28 36" aria-hidden="true"><line x1="9" y1="5" x2="9" y2="31" stroke="#25221d" stroke-width="2.697" stroke-linecap="round"/><line x1="19" y1="6.95" x2="19" y2="29.05" stroke="#7672ac" stroke-width="2.697" stroke-linecap="round"/></svg>
+      <span class="name">Between Lines</span>
+    </a>
+    <nav class="site" aria-label="Between Lines">
+      <ul>
+        <li><a href="./" aria-current="page">Privacy</a></li>
+        <li><a href="../support/">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+<div class="wrap">
+  <p class="eyebrow">Between Lines for iPhone</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated 12 November 2026</p>
+
+  <div class="card summary">
+    <h2 id="short">In short</h2>
+    <ul>
+      <li>What you save stays on your iPhone.</li>
+      <li>A reading is sent to OpenAI's AI only after you've given permission.</li>
+      <li>We don't store your messages, notes or readings on our servers.</li>
+      <li>No account, no ads, no tracking, and we don't sell your data.</li>
+    </ul>
+  </div>
+
+  <nav class="card toc" aria-label="On this page">
+    <strong>On this page</strong>
+    <ol>
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#device">What stays on your iPhone</a></li>
+      <li><a href="#reading">What's sent for a reading</a></li>
+      <li><a href="#openai">OpenAI</a></li>
+      <li><a href="#server">What our server keeps</a></li>
+      <li><a href="#tracking">Analytics, ads and tracking</a></li>
+      <li><a href="#email">Emails and this website</a></li>
+      <li><a href="#retention">How long information is kept</a></li>
+      <li><a href="#choices">Your choices</a></li>
+      <li><a href="#rights">Your privacy rights</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#age">Age</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="who">Who we are</h2>
+  <p>Between Lines is operated by <strong>NKreative LLC</strong> ("we", "us"), which is responsible for the app and for the practices described in this policy. The app is distributed on the App Store through its owner's individual Apple Developer account, so the App Store may show that person's name as the seller.</p>
+  <!-- REVIEW (legal, open): no postal address is shown, by decision (never use a personal residential address). Distribution: international, excluding the 27 EU countries, UK included (decided 13 Nov 2026). UK GDPR expects the controller's identity and contact details (an email address is often enough), and a non-UK controller offering an app to people in the UK may need to appoint a UK representative (UK GDPR Article 27, with limited exemptions). Get advice on whether that applies, and on whether Norway, Iceland or Liechtenstein (EEA, not EU) are included in the distribution, since the GDPR would then apply there too. -->
+  <p>Questions about this policy or your privacy: <a href="mailto:privacy@nkreative.com">privacy@nkreative.com</a>.</p>
+
+  <h2 id="device">What stays on your iPhone</h2>
+  <p>The people you add (name, relationship, your description and saved patterns), your reading history, saved replies, your choices in the app, and simple usage counts that never leave your device.</p>
+  <p>These are saved only on your iPhone, never on our server. Only when you ask for a reading are some of them sent with it, as listed below.</p>
+  <p>You can delete any of these in the app, or everything at once with <strong>Delete all local data</strong> on the Privacy page. Deleting the app also removes them.</p>
+
+  <h2 id="reading">What's sent when you ask for a reading</h2>
+  <p>Before your first reading, Between Lines asks for your permission to send readings to OpenAI. Nothing is sent until you agree. When you ask for a reading, the app sends:</p>
+  <ul>
+    <li>the message you paste, and any context you add</li>
+    <li>the person's relationship type, your description of them and their saved patterns</li>
+    <li>up to 5 of their recent messages from your history</li>
+  </ul>
+  <p>The person's name isn't sent. This goes over an encrypted connection (HTTPS) to our server, which passes it to OpenAI and returns the reading. Our server doesn't store any of it, or the reading.</p>
+  <p>Messages you paste were written by someone else, so please leave out anything you'd rather not share.</p>
+
+  <h2 id="openai">OpenAI</h2>
+  <p>OpenAI provides the AI that creates readings, as our service provider. Under OpenAI's API data policy, data sent through its API isn't used to train its models by default, and may be kept for up to 30 days for abuse monitoring. See <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI's data controls</a>.</p>
+
+  <h2 id="server">What our server keeps</h2>
+  <p>Our server runs on <strong>Railway</strong>, a cloud hosting provider, in its US West region in the United States. It never keeps the content of your messages or readings. It keeps only what's needed for free readings and to prevent abuse:</p>
+  <ul>
+    <li><strong>A random install ID</strong> created for this app. Your iPhone keeps it in secure storage (the Keychain); our server keeps only a protected one-way hash of it, with when it was first and last used, removed after 90 days without use.</li>
+    <li><strong>The times of your readings</strong>, stored with that hash to count your free readings. Each is removed up to 2 days after the reading, by a clean-up that runs every hour.</li>
+    <li><strong>Your network (IP) address</strong>, only as a protected hash that changes every day, for abuse limits. Not stored with the install ID, and removed within about 3 days.</li>
+    <li><strong>Technical logs</strong> of each request's type, time and result, but never its content.</li>
+  </ul>
+  <p>Railway may keep its own standard technical logs, such as IP addresses, for security and reliability.</p>
+
+  <h2 id="tracking">Analytics, advertising and tracking</h2>
+  <p>Between Lines has no ads and no third-party analytics, and doesn't track you across other companies' apps or websites. The simple usage counts mentioned above stay on your iPhone. We don't sell your personal information or share it for advertising.</p>
+
+  <h2 id="email">Emails and this website</h2>
+  <p>If you email us, you choose what to send: we receive your email address and whatever you include in your message, and use them to answer you. <strong>Report a problem with this reading</strong> in the app opens an email draft to <a href="mailto:support@nkreative.com">support@nkreative.com</a>; it's never sent automatically, and nothing from your reading is added to it. We keep support correspondence only as long as reasonably necessary to deal with your enquiry and to meet applicable legal obligations.</p>
+  <p>This website is hosted on GitHub Pages; GitHub may process technical information such as your IP address when you visit, as described in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>. This website itself sets no cookies and uses no analytics, scripts or third-party fonts.</p>
+
+  <h2 id="retention">How long information is kept</h2>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th scope="col">Information</th><th scope="col">Where</th><th scope="col">Kept</th></tr></thead>
+    <tbody>
+      <tr><td>People, notes, patterns, history, saved replies, AI permission</td><td>Your iPhone</td><td>Until you delete them or the app</td></tr>
+      <tr><td>Message and details sent for a reading, and the reading</td><td>Our server</td><td>Not stored</td></tr>
+      <tr><td>The same, at OpenAI</td><td>OpenAI</td><td>Up to 30 days, for abuse monitoring</td></tr>
+      <tr><td>Install ID hash, first and last use</td><td>Our server</td><td>Removed after 90 days without use</td></tr>
+      <tr><td>Times of your readings</td><td>Our server</td><td>Up to 2 days</td></tr>
+      <tr><td>Daily IP address hash</td><td>Our server</td><td>About 3 days</td></tr>
+      <tr><td>Install ID itself</td><td>Your iPhone's Keychain</td><td>May remain after deleting the app (see below)</td></tr>
+      <tr><td>Support emails</td><td>Our email</td><td>As long as reasonably necessary</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 id="choices">Your choices</h2>
+  <ul>
+    <li>Withdraw permission for AI readings at any time on the Privacy page in the app. Your saved people and history stay.</li>
+    <li>Delete single items in the app, or everything with <strong>Delete all local data</strong>.</li>
+    <li>Report a reading by email. It's never sent automatically, and you choose what to include.</li>
+  </ul>
+  <p>The install ID stays in your iPhone's secure storage, even after deleting all local data, and iOS may keep it after the app is deleted. This means free readings can't be reset by reinstalling. It's a random code that contains nothing about you. Our server's records for it are the protected hash and the usage records stored with it; we don't ask for your name, email or an account, and these records expire on their own as described above.</p>
+
+  <h2 id="rights">Your privacy rights</h2>
+  <p>Depending on where you live (for example in the United Kingdom, or some US states), you may have rights over your personal information, such as the right to access it, have it corrected or deleted, restrict or object to how it's used, receive a copy of it, and withdraw your consent at any time. You can also complain to your local data protection authority.</p>
+  <p>To make a request, email <a href="mailto:privacy@nkreative.com">privacy@nkreative.com</a>. Most of your information is on your iPhone, where you can view and delete it yourself. Because we don't ask for your name, email or an account, the records on our server can't normally be linked to you, and they're removed automatically within the periods above. We'll respond to every request and explain what we can do.</p>
+  <p>Where these laws apply, we rely on your <strong>consent</strong> to send readings to OpenAI (which you can withdraw in the app), on our <strong>legitimate interests</strong> to provide free readings fairly, prevent abuse and keep the service secure, and on our legitimate interests to answer emails you send us.</p>
+  <!-- REVIEW (legal, open): the rights summary and the legal bases (consent; legitimate interests) are a plain-language draft, not legal advice. Have them checked for the distribution countries, in particular the UK (UK GDPR and the Data Protection Act 2018, response time limits, and the right to complain to the Information Commissioner's Office), and for any other country with its own privacy law. -->
+
+  <h2 id="transfers">International transfers</h2>
+  <p>Between Lines is available in many countries. Our server runs on Railway in the United States (US West), so if you use Between Lines outside the United States, the information sent for a reading is transferred to the United States, where data protection laws may differ from those where you live. For example, if you use Between Lines in the United Kingdom, the information sent for a reading is transferred from the UK to the United States. OpenAI, which creates the reading, is a US company and may process that information in the United States or other countries where it or its providers operate. This website is hosted by GitHub, also a US company.</p>
+  <p>If you have questions about these transfers, contact <a href="mailto:privacy@nkreative.com">privacy@nkreative.com</a>.</p>
+  <!-- REVIEW (legal, open): transfers from the UK to the US can require a specific mechanism under UK GDPR (for example the UK Extension to the EU-US Data Privacy Framework, where a recipient is certified, or the UK International Data Transfer Agreement or Addendum). This section only describes where data goes and makes no claim about safeguards. Confirm with legal advice what, if anything, must be in place or stated, for the UK and other distribution countries with transfer rules. -->
+
+  <h2 id="security">Security</h2>
+  <p>Information sent for a reading travels over an encrypted connection (HTTPS). Our server doesn't store message content, and keeps install IDs and IP addresses only as protected one-way hashes. No method of transmission or storage is completely secure, but we limit what we keep so there's as little as possible to protect.</p>
+
+  <h2 id="age">Age</h2>
+  <p>Between Lines is intended for adults aged 18 and older. Please do not use the app if you are under 18. We do not ask for your age or date of birth, and we do not knowingly collect personal information from anyone under 18. If you believe someone under 18 has sent us personal information, contact <a href="mailto:privacy@nkreative.com">privacy@nkreative.com</a>.</p>
+
+  <h2 id="changes">Changes to this policy</h2>
+  <p>If we change what's sent, or who it's sent to, we'll update this policy and ask for your permission again in the app before your next reading. For other changes, we'll update this page and the date at the top.</p>
+
+  <h2 id="contact">Contact</h2>
+  <p>NKreative LLC</p>
+  <ul>
+    <li>Privacy questions: <a href="mailto:privacy@nkreative.com">privacy@nkreative.com</a></li>
+    <li>Support and reporting a reading: <a href="mailto:support@nkreative.com">support@nkreative.com</a></li>
+    <li>General enquiries: <a href="mailto:hello@nkreative.com">hello@nkreative.com</a></li>
+  </ul>
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p><a href="./">Privacy Policy</a> · <a href="../support/">Support</a> · <a href="../">Between Lines</a></p>
+    <p>Between Lines is operated by NKreative LLC.</p>
+  </div>
+</footer>
+</body>
+</html>
